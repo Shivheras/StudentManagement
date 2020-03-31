@@ -8,7 +8,6 @@ D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\staticwebassets\StudentCou
 D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\StudentCourse.AssemblyInfoInputs.cache
 D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\StudentCourse.AssemblyInfo.cs
 D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\StudentCourse.RazorTargetAssemblyInfo.cache
-D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\StudentCourse.MvcApplicationPartsAssemblyInfo.cache
 D:\Office\Tasks\StudentCourse\bin\Debug\netcoreapp3.1\StudentCourse.deps.json
 D:\Office\Tasks\StudentCourse\bin\Debug\netcoreapp3.1\StudentCourse.runtimeconfig.json
 D:\Office\Tasks\StudentCourse\bin\Debug\netcoreapp3.1\StudentCourse.runtimeconfig.dev.json
@@ -23,3 +22,4 @@ D:\Office\Tasks\StudentCourse\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreap
 D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\StudentCourse.csproj.CopyComplete
 D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\StudentCourse.dll
 D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\StudentCourse.pdb
+D:\Office\Tasks\StudentCourse\obj\Debug\netcoreapp3.1\StudentCourse.MvcApplicationPartsAssemblyInfo.cache

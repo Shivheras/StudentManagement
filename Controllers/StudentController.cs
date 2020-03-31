@@ -24,6 +24,7 @@ namespace StudentCourse.Controllers
             return Ok(experiences);
 
         }
+        
         [HttpGet]
         public IActionResult Get()
         {
@@ -41,7 +42,7 @@ namespace StudentCourse.Controllers
 
         
 
-        [HttpPut("{id}")]
+        [HttpPut]
         public IActionResult Put(Students student)
         {
             StudentDomain.update(student);

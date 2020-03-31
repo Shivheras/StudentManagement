@@ -10,7 +10,7 @@ namespace StudentCourse.Domains
     {
         public void update(Students student)
         {
-            this.ExecuteNonQuery($"update  Students  set Name ='{student.Name}',Password='{student.Password}',Email='{student.EmailId}',MobileNo='{student.MobileNo}' where StudentId={student.StudentId}");
+            this.ExecuteNonQuery($"update  Students  set Name ='{student.Name}',Password='{student.Password}',EmailId='{student.EmailId}',MobileNo='{student.MobileNo}' where StudentId={student.StudentId}");
         }
         public void del(int StudentId)
         {
@@ -41,8 +41,8 @@ namespace StudentCourse.Domains
                 course.StudentId = reader.GetInt32(0);
                 course.Name = reader.GetString(1);
                 course.EmailId = reader.GetString(2);
-                course.Password = reader.GetString(2);
-                course.MobileNo = reader.GetString(2);
+                course.Password = reader.GetString(3);
+                course.MobileNo = reader.GetString(4);
 
 
 
@@ -60,8 +60,8 @@ namespace StudentCourse.Domains
                 course.StudentId = reader.GetInt32(0);
                 course.Name = reader.GetString(1);
                 course.EmailId = reader.GetString(2);
-                course.Password = reader.GetString(2);
-                course.MobileNo = reader.GetString(2);
+                course.Password = reader.GetString(3);
+                course.MobileNo = reader.GetString(4);
 
 
                 courses.Add(course);
