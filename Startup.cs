@@ -38,8 +38,8 @@ namespace StudentCourse
                 app.UseDeveloperExceptionPage();
             }
             app.UseCors(
-        options => options.WithOrigins("http://localhost:4200").AllowAnyMethod()
-    );
+        options => options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowCredentials()
+        .WithHeaders("Accept", "Content-Type", "Origin", "X-My-Header"));
             app.UseHttpsRedirection();
 
             app.UseRouting();

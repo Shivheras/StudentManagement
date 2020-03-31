@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using StudentCourse.Domains;
 using StudentCourse.Models;
 using System;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace StudentCourse.Controllers
 {
+    
     [ApiController]
     [Route("[controller]")]
     public class CourseController:ControllerBase
