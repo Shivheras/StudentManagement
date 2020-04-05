@@ -8,19 +8,20 @@ using System.Threading.Tasks;
 
 namespace StudentCourse.Controllers
 {
+
     [ApiController]
     [Route("[controller]")]
-    public class LoggedController : ControllerBase
+    public class AdminController : ControllerBase
     {
-            public LoggedController()
+        public AdminController()
         {
             this.AdminDomain = new AdminDomain();
         }
         [HttpPost]
         public IActionResult Post(Admin admin)
         {
-           var login= AdminDomain.IsLogin(admin);
-            return Ok(login);
+            AdminDomain.Add(admin);
+            return Ok();
         }
         private AdminDomain AdminDomain { get; set; }
     }

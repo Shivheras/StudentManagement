@@ -20,16 +20,7 @@ namespace StudentCourse.Domains
         {
             this.ExecuteNonQuery($"insert into Students  values('{student.Name}','{student.Password}','{student.EmailId}','{student.MobileNo}')");
         }
-        public bool IsLogin(Students user)
-        {
-            var reader = this.GetReader($"select * from Students where EmailId='{user.EmailId}' and Password = '{user.Password}'");
-            var isLoggedIn = false;
-            while (reader.Read())
-            {
-                isLoggedIn = true;
-            }
-            return isLoggedIn;
-        }
+       
         public List<Students> Get(int StudentId)
         {
             var reader = this.GetReader($"select * from Students where StudentId='{StudentId}' ");
@@ -37,12 +28,12 @@ namespace StudentCourse.Domains
             while (reader.Read())
             {
                 var course = new Students();
-                
+
                 course.StudentId = reader.GetInt32(0);
                 course.Name = reader.GetString(1);
-                course.EmailId = reader.GetString(2);
-                course.Password = reader.GetString(3);
-                course.MobileNo = reader.GetString(4);
+                course.MobileNo = reader.GetString(2);
+                course.EmailId = reader.GetString(3);
+                course.Password = reader.GetString(4);
 
 
 
@@ -59,9 +50,9 @@ namespace StudentCourse.Domains
                 var course = new Students();
                 course.StudentId = reader.GetInt32(0);
                 course.Name = reader.GetString(1);
-                course.EmailId = reader.GetString(2);
-                course.Password = reader.GetString(3);
-                course.MobileNo = reader.GetString(4);
+                course.MobileNo = reader.GetString(2);
+                course.EmailId = reader.GetString(3);
+                course.Password = reader.GetString(4);
 
 
                 courses.Add(course);

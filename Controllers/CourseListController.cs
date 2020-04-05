@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StudentCourse.Domains;
+using StudentCourse.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,19 @@ namespace StudentCourse.Controllers
         public IActionResult Get(int id)
         {
             var list = this.CourseListDomain.Get(id);
+            return Ok(list);
+
+        }
+        [HttpPost]
+        public IActionResult Post(CourseLists courseLists)
+        {
+            CourseListDomain.Add(courseLists);
+            return Ok();
+        }
+        [HttpGet]
+        public IActionResult Get()
+        {
+            var list = this.CourseListDomain.Get();
             return Ok(list);
 
         }
